@@ -24,6 +24,29 @@
     {%endfor%} {{lst}}
     <h1>{{lst | join:" - "}}</h1>
     <h1>{{ bdate | date:"D d M Y" }}.</h1>
+    <h1>{{ value | length }}</h1>
+    <h1>{{ value | add:"2" }}</h1>
+    <h1>{{ slash | addslashes }}</h1>
+    <h1>{{ slash | capfirst }}</h1>
+    <h1>{{ slash | center:"15" }}</h1>
+    <h1>{{ slash | cut:" "}}</h1>
+    <h1>{{ val | default:"nothing"}}</h1>
+    <h1>{{ main | dictsort:"name" }}</h1>
+    <h1>{{ valu | divisibleby:"5" }}</h1>
+    <h1>{{ v | filesizeformat }}</h1>
+    <h1>{{lst | first }}</h1>
+    <h1>{{lst | last }}</h1>
+    <h1>{{lst | random }}</h1>
+    <h1>{{line | linenumbers }}</h1>
+    <h1>{{line | wordcount }}</h1>
+    <h1>{{upper | lower }}</h1>
+    <h1>{{lower | upper }}</h1>
+    <h1>{{upper | make_list }}</h1>
+    <h1>{{value | slice:":2" }}</h1>
+    <h1>{{ slash | slugify }}</h1>
+    <h1>{{ timenow | time:"H:i" }}</h1>
+    <h1>{{ var | unordered_list }}</h1>
+
     <script src="" async defer></script>
   </body>
 </html>
