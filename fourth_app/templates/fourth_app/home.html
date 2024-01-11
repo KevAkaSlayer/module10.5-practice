@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <h1>this is home page</h1>
+    <h2>Author: {{author}}</h2>
+    <h2>Age: {{age}}</h2>
+
+    {% comment %} condition statement {% endcomment %} {%if age >= 20 %}
+    <h4>You are an adult</h4>
+    {%elif age >= 13 and age <= 19%}
+    <h4>You are teen</h4>
+    {%else%}
+    <h4>You are a child</h4>
+    {% endif %} {% comment %} for loop {% endcomment %} {%for i in courses %}
+    <h3>{{i.id}} {{i.name}} {{i.fee}}</h3>
+    {%endfor%} {{lst}}
+    <h1>{{lst | join:" - "}}</h1>
+    <h1>{{ bdate | date:"D d M Y" }}.</h1>
+    <script src="" async defer></script>
+  </body>
+</html>
